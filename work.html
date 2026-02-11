@@ -31,6 +31,20 @@
     ></script>
   </head>
   <body>
+        <div class="container">
+     <ul>
+        <nav class="d-flex justify-content-between">
+            <a href="/" title="Homepage">
+            <img src="images/logo.png" class="logo d-none d-md-block" alt="SheCodes Logo">
+            <img src="images/logo-small.png" class="logo d-block d-md-none" alt="SheCodes Logo">
+        </a>
+            <li><a href="/" title="Homepage">Home</a></li>
+            <li class="active"><a href="/work.html" title="Katalin Simon's work">Work</a></li>
+            <li><a href="/about.html" title="About Katalin Simon">About</a></li>
+            <li><a href="/contact.html" title="Contact Katalin Simon">Contact</a></li>
+        </ul>
+     </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Take a look at what I've been working on!</h1>
@@ -42,7 +56,7 @@
               class="img-fluid mb-3 rounded"
               alt=""
             />
-            <h3 class="text-center m-0">Yoghurt Project</h3>
+            <h3 class="text-center m-0" id="yoghurt">Yoghurt Project</h3>
             <p class="text-center text-muted">Built with HTML and CSS</p>
           </div>
           <div class="col-md-6 mb-4">
@@ -51,7 +65,7 @@
               class="img-fluid mb-3 rounded"
               alt=""
             />
-            <h3 class="text-center m-0">Weather Project</h3>
+            <h3 class="text-center m-0" id="weather">Weather Project</h3>
             <p class="text-center text-muted">
               Built with HTML, CSS and JavaScript
             </p>
@@ -62,7 +76,7 @@
               class="img-fluid mb-3 rounded"
               alt=""
             />
-            <h3 class="text-center m-0">Dictionary App</h3>
+            <h3 class="text-center m-0" id="dictionary">Dictionary App</h3>
             <p class="text-center text-muted">
               Built with HTML, CSS with React
             </p>
@@ -73,7 +87,7 @@
               class="img-fluid mb-3 rounded"
               alt=""
             />
-            <h3 class="text-center m-0">Translation App</h3>
+            <h3 class="text-center m-0" id="translation">Translation App</h3>
             <p class="text-center text-muted">
               Built with HTML, CSS with React
             </p>
@@ -81,5 +95,35 @@
         </div>
       </div>
     </div>
+         <footer class="container">
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h4>Work Inquiry</h4>
+        <p class="text-muted">Let's get in touch!</p>
+            </div>
+            <div>
+        <a href="/contact.html" class="btn btn-branding mt-3" title="Contact Katalin">Contact me</a>
+       </div>
+     </div>
+    <div class="d-flex justify-content-center mb-5">
+<a href="mailto:katalinsimon1413@gmail.com" class="email-link">katalinsimon1413@gmail.com
+</a>
+</div>
+<div class="social-links d-flex justify-content-center mb-5">
+<a href="mailto:katalinsimon1413@gmail.com">
+ <i class="fa-solid fa-envelope"></i>
+</a>
+<a href=" https://www.linkedin.com/in/katalin-simon">
+ <i class="fa-brands fa-linkedin"></i>
+</a>
+<a href="https://www.instagram.com/katka1413">
+ <i class="fa-brands fa-instagram"></i>
+</a>
+</div>
+<p class="text-center text-muted mt-5">This project was coded  by Katalin Simon in 2026 while taking the SheCodes Bootcamp, and it is 
+<a href="https://github.com/Meggyis/portfolio-project" target="_blank">open sourced.</a>
+</p>
+</footer>
+</div>
   </body>
 </html>

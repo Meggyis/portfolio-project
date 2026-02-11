@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Portfolio Project</title>
+    <meta name="description" content="Front-end developer portfolio of Katalin Simon">
+    <title>Front-end developer - Katalin Simon</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +22,14 @@
     <div class="container">
      <ul>
         <nav class="d-flex justify-content-between">
-            <a href="/">
-            <img src="images/logo.png" class="logo display-block display-md-none">
-            <img src="images/logo-small.png" class="logo display-none display-md-block">
+            <a href="/" title="Homepage">
+            <img src="images/logo.png" class="logo d-none d-md-block" alt="SheCodes Logo">
+            <img src="images/logo-small.png" class="logo d-block d-md-none" alt="SheCodes Logo">
         </a>
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/work.html">Work</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li class="active"><a href="/" title="Homepage">Home</a></li>
+            <li><a href="/work.html" title="Katalin Simon's work">Work</a></li>
+            <li><a href="/about.html" title="About Katalin Simon">About</a></li>
+            <li><a href="/contact.html" title="Contact Katalin Simon">Contact</a></li>
         </ul>
      </nav>
     </div>
@@ -37,7 +38,7 @@
     <h1>Katalin Simon</h1>
     <h2 class="mb-5">Frontend Developer, based in Sweden</h2>
     <div>
-    <a href="#" class="btn btn-branding">Contact me</a>
+    <a href="/contact.html" class="btn btn-branding">Contact me</a>
      </div>
     </div> 
     <p class="text-center m-5">
@@ -46,7 +47,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col d-none d-lg-block">
-            <img src="images/yoghurt.png" alt="Yoghurt project" class="img-fluid mb-5">
+            <img src="images/yoghurt.png" alt="Yoghurt project preview" class="img-fluid mb-5">
             </div>
             <div class="col">
                 <div class="project-description">
@@ -56,7 +57,7 @@
             Yoghurt is widely recognized as a "superfood" due to several key benefits: it contains probiotics (live cultures) that balance gut bacteria. It is a rich source of calcium, phosphorus, and often Vitamin D, which are essential for maintaining bone density and preventing osteoporosis.
             Also, because the fermentation process breaks down lactose, many people who are lactose intolerant find yoghurt much easier to digest than plain milk.
                 </p>
-            <a href="" class="btn btn-branding-outline">Learn more</a>
+            <a href="/work.html#yoghurt" class="btn btn-branding-outline">Learn more</a>
             </div>
           </div>
         </div>
@@ -67,16 +68,16 @@
             <p class="mb-5 text-muted">The Weather app is a responsive web application that displays current weather information for any location. It uses a weather API to fetch real-time data, including temperature, humidity, wind speed, and weather conditions. The app features a clean and intuitive user interface with a modern design that adapts to different screen sizes.
             Users can search for weather information by entering a city name or using their current location. The app also includes a 5-day forecast, allowing users to plan their activities based on upcoming weather conditions. The Weather project is built with HTML, CSS, and JavaScript, and it demonstrates my ability to create functional and visually appealing web applications.
                 </p>
-            <a href="" class="btn btn-branding-outline">Learn more</a>
+            <a href="/work.html#weather" class="btn btn-branding-outline">Learn more</a>
             </div>
             </div>
             <div class="col d-none d-lg-block">
-            <img src="images/weather.png" alt="Weather project" class="img-fluid mb-5">
+            <img src="images/weather.png" alt="Weather project preview" class="img-fluid mb-5">
             </div>
         </div>
         <div class="row mb-5">
             <div class="col d-none d-lg-block">
-            <img src="images/dictionary.png" alt="Dictionary project" class="img-fluid mb-5">
+            <img src="images/dictionary.png" alt="Dictionary project preview" class="img-fluid mb-5">
             </div>
             <div class="col">
             <div class="project-description">
@@ -84,22 +85,23 @@
             <p class="mb-5 text-muted">The Dictionary project is a web application that allows users to look up definitions of words. It features a clean and user-friendly interface with a search bar where users can enter a word to find its definition. The app displays the definition, pronunciation, and example sentences for each word.
             The app is built using HTML, CSS, and JavaScript, and it demonstrates my ability to create interactive web applications that provide useful functionality to users.
                 </p>
-            <a href="" class="btn btn-branding-outline">Learn more</a>
+            <a href="/work.html#dictionary" class="btn btn-branding-outline">Learn more</a>
          </div>
       </div>
      </div>
-     <footer>
-        <div>
+     <footer class="container">
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h4>Work Inquiry</h4>
+        <p class="text-muted">Let's get in touch!</p>
+            </div>
             <div>
-        <h4 class="text-center mb-5">Work Query</h4>
-    </div>
-        <div>
-        <p>Let's get in touch!</p>
-        <a href="mailto:katalinsimon1413@gmail.com" class="btn btn-branding">Contact me</a>
-    </div>
-    <div class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex">
+        <a href="/contact.html" class="btn btn-branding mt-3" title="Contact Katalin">Contact me</a>
+       </div>
+     </div>
+    <div class="d-flex justify-content-center mb-5">
 <a href="mailto:katalinsimon1413@gmail.com" class="email-link">katalinsimon1413@gmail.com
-</a></div>
+</a>
 </div>
 <div class="social-links d-flex justify-content-center mb-5">
 <a href="mailto:katalinsimon1413@gmail.com">
@@ -112,6 +114,9 @@
  <i class="fa-brands fa-instagram"></i>
 </a>
 </div>
+<p class="text-center text-muted mt-5">This project was coded  by Katalin Simon in 2026 while taking the SheCodes Bootcamp, and it is 
+<a href="https://github.com/Meggyis/portfolio-project" target="_blank">open sourced.</a>
+</p>
 </footer>
 </div>
 </body>
