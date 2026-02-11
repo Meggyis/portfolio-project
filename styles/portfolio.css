@@ -41,10 +41,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 96px;
-line-height: 1.5;
+    line-height: 1.5;
 }
 h2 {
     font-size: 64px;
+}
+h4 {
+    font-size: 48px;
 }
 p {
     font-weight: normal;
@@ -115,6 +118,42 @@ p {
 .project-description {
     padding: 120px 60px;
 }
+footer {
+  margin: 60px 0;
+}
+footer .contact-box {
+    background: var(--secondary-color);
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+footer .contact-box p {
+    margin: 0;
+}
+footer .email-link {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+}
+footer .email-link:hover {
+    color: var(--branding-color);
+    transition: all 0.3s ease-in-out;
+}
+footer .social-links a {
+    color: var(--branding-color);
+    background: var(--secondary-color);
+    margin: 0 20px;
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-flex;
+}
+footer .social-links a:hover {
+    background: var(--branding-color);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
 @media (max-width: 900px) {
     h1 {
         font-size: 44px;
@@ -122,6 +161,13 @@ p {
     }
     h2 {
         font-size: 44px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
     }
     .hero {
         padding: 80px 20px;
