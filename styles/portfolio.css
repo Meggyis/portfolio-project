@@ -1,13 +1,21 @@
 :root {
-    --branding-color: #5d58bb;
-    --secondary-color: #d3c6f1;
+    --branding-color: #7D4F7A;
+    --branding-color-dark: #6A3D67;
+    --accent-color: #4AACB5;
+    --accent-color-dark: #3A9AA3;
+    --secondary-color: #F0E8F2;
+    --secondary-accent: #D4EEF0;
+    --dark-color: #3A1F38;
     --heading-font-family: 'Playfair Display', serif;
     --default-font-family: 'Questrial', sans-serif;
+}
 
-}
 body {
-font-family: var(--default-font-family);
+    font-family: var(--default-font-family);
+    color: var(--dark-color);
 }
+
+/* ── NAVIGATION ── */
 .logo {
     max-height: 40px;
 }
@@ -20,24 +28,26 @@ nav ul {
 }
 nav li {
     display: inline;
-   list-style: none;
-   
+    list-style: none;
     margin-right: 20px;
     line-height: 40px;
     margin-left: 15px;
 }
-nav a {    
+nav a {
     text-decoration: none;
-    color: #272142;
+    color: var(--dark-color);
 }
-nav a:hover,nav li.active a {
+nav a:hover,
+nav li.active a {
     color: var(--branding-color);
     transition: all 0.3s ease-in-out;
 }
+
+/* ── TYPOGRAPHY ── */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font-family);
     font-weight: bold;
-    color: black;
+    color: var(--dark-color);
 }
 h1 {
     font-size: 96px;
@@ -53,8 +63,10 @@ p {
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
+    color: #4a3a48;
 }
 
+/* ── HERO ── */
 .hero {
     background: var(--secondary-color);
     text-align: center;
@@ -63,47 +75,62 @@ p {
 .hero p {
     font-size: 36px;
     font-weight: bold;
-    color: #272142;
+    color: var(--dark-color);
     margin: 0;
 }
+.hero h1 {
+    color: var(--dark-color);
+}
 .hero h2 {
-    font-family: var(--heading-font-family);
+    font-family: var(--default-font-family);
     font-size: 24px;
     font-weight: normal;
     line-height: 1.5;
+    color: var(--branding-color);
 }
+
+/* ── CONTENT ── */
 .content-container {
-  padding: 60px 20px; 
+    padding: 60px 20px;
 }
 .content h1 {
     font-size: 58px;
     line-height: 80px;
 }
 .content h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-family: var(--default-font-family);
+    color: var(--branding-color);
+    font-weight: normal;
 }
 .content h3 {
-  font-size: 24px;
-  line-height: 1.5;
-
-  font-family: var(--default-font-family);
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: var(--default-font-family);
 }
-
 .content p {
-  font-size: 14px;
+    font-size: 15px;
+    line-height: 1.8;
 }
 .content {
     margin: 30px;
 }
+
+/* ── BUTTONS ── */
 .btn-branding {
     background: var(--branding-color);
     color: white;
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+}
+.btn-branding:hover {
+    background: var(--branding-color-dark);
+    color: white;
 }
 .btn-branding-outline {
     background: transparent;
@@ -111,33 +138,47 @@ p {
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
     border: 2px solid var(--branding-color);
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
 }
+.btn-branding-outline:hover {
+    background: var(--branding-color);
+    color: white;
+}
+
+/* ── PROJECTS ── */
 .project-description {
     padding: 120px 60px;
 }
+
+/* ── FOOTER ── */
 footer {
-  margin: 60px 0;
+    margin: 60px 0;
 }
 footer .contact-box {
     background: var(--secondary-color);
     padding: 30px 120px;
     border-radius: 10px;
 }
+footer .contact-box h4 {
+    color: var(--dark-color);
+}
 footer .contact-box p {
     margin: 0;
+    color: #6a5068;
 }
 footer .email-link {
-    color: black;
+    color: var(--dark-color);
     text-decoration: none;
     font-size: 24px;
     text-align: center;
+    transition: color 0.3s ease-in-out;
 }
 footer .email-link:hover {
     color: var(--branding-color);
-    transition: all 0.3s ease-in-out;
 }
 footer .social-links a {
     color: var(--branding-color);
@@ -148,36 +189,63 @@ footer .social-links a {
     border-radius: 50%;
     text-decoration: none;
     display: inline-flex;
-}
-footer .social-links a:hover {
-    background: var(--branding-color);
-    color: white;
     transition: all 0.3s ease-in-out;
 }
+footer .social-links a:hover {
+    background: var(--accent-color);
+    color: white;
+}
+footer p.text-muted {
+    color: #8a7088 !important;
+}
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--accent-color-dark);
+}
+
+/* ── ACCENT DETAILS ── */
+.text-accent {
+    color: var(--accent-color);
+}
+
+/* image rounding on about page */
+.img-fluid.rounded {
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(125, 79, 122, 0.10);
+}
+
+/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
     h1 {
         font-size: 44px;
         line-height: 1.2;
     }
     h2 {
-        font-size: 44px;
+        font-size: 36px;
     }
     h4 {
         font-size: 18px;
     }
-    .btn {
+    .btn-branding,
+    .btn-branding-outline {
         font-size: 14px;
         padding: 10px 20px;
     }
     .content {
         padding: 0;
-        text-align: center;
+        text-align: left;
     }
     .project-description {
-        padding: 0;
-        text-align: center;
+        padding: 20px 0;
+        text-align: left;
     }
     nav a {
         font-size: 14px;
+    }
+    .hero h2 {
+        font-size: 18px;
     }
 }
